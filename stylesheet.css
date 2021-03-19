@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,5 +8,29 @@
 }
 
 body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    
+    
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .side-nav{
+    background-color: #FBFBFB;
+    width: 15%;
+    position: fixed;
+    height: 100%;
+}
+
+.wrapper .main-section{
+    width: 85%;
+    background-color: #FDFDFD;
+    margin-left: 15%;
+    
+    
+    
+}
+
