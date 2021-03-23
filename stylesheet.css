@@ -9,28 +9,207 @@
 
 body{
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-    
+    font-size: 9px;
     
 }
 
 .wrapper{
     display: flex;
     flex-direction: row;
+    
 }
 
-.wrapper .side-nav{
+.side-nav{
     background-color: #FBFBFB;
     width: 15%;
     position: fixed;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+       
 }
 
-.wrapper .main-section{
+.side-nav ul{
+    justify-self: center;
+    margin-top: 20%;
+}
+
+.side-nav ul li {
+    font-size: 13px;
+    margin-top: 17px;
+    text-decoration: none;
+    margin-left: 10%;
+    list-style-type: none;
+}
+
+.side-nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.side-nav ul li a:hover{
+    color: rgb(100, 97, 94);
+    animation: hoverTitle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes hoverTitle {
+    0% {
+        color: rgb(155, 155, 155);
+    }
+
+    50% {
+        color: rgb(51, 51, 51);
+    }
+
+    100% {
+        color: rgb(15, 15, 15);
+    }
+
+}
+
+
+
+.current{
+    font-weight: 900;
+}
+
+.main-section{
     width: 85%;
-    background-color: #FDFDFD;
+    background-color: #FFFFFF;
     margin-left: 15%;
-    
-    
+    /* background-image: url('media/clean-textile.png'); */
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-right: 100px;
     
 }
 
+.square-item{
+    /* background-color: ; */
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.square-item > img{
+    height: inherit;
+    width: inherit;
+    object-fit: scale-down;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    display: none;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: transparent;
+    color: white;
+    float: left;
+  }
+
+@media screen and (max-width: 800px){
+
+    body{
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .topnav{
+        display: block;
+        margin-top: 10px;
+    }
+
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+
+    .side-nav{
+        display: none;
+        width: 0%;
+    }
+
+    .main-section{
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-right: 0px;
+        margin-left: 0px;
+        
+    }
+    
+    .square-item{
+        width: 90vw;
+        justify-self: center;
+        margin: 0px;
+        object-fit: scale-down;
+        
+    }
+
+    .square-item > img {
+        width: inherit;
+       
+        
+
+    }
+    
+    
+
+    
+}
