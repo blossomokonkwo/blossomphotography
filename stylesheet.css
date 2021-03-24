@@ -161,29 +161,49 @@ body{
   }
 
   .experience-section {
-    
+    width: 90%;
+    background-color: #FFFFFF;
+    margin-left: 10%;
+    margin-top: 100px;
+    padding-right: 20px;        
+
     
     
   }
 
   .experience-entry{
+    padding: 10px;
+    width: 90%;
+    
+    
 
   }
 
   .experience-entry > h1{
+    font-size: 30px;
+    
 
   }
 
   .experience-item {
+        margin-left: 100px;
+        padding: 10px;
+        margin-bottom: 10px;
 
+        
   }
 
   .experience-item h3{
+    font-size: 25px;
+  }
 
+  .experience-item p {
+      font-size: 20px;
+      
   }
 
   .client-logos{
-      
+
   }
 /* @media screen and (max-width: 800px){
    
@@ -249,7 +269,33 @@ body{
 
     }
     
+    .experience-section {
+        width: 90%;
+        background-color: #FFFFFF;
+        margin-left: 5%;
+        margin-top: 25px;
+        padding-right: 10px;        
+        
+      }
+
+    .experience-entry > h1{
+        font-size: 30px;
     
+      }
+    
+      .experience-item {
+            margin-left: 25px;
+            padding: 5px;
+      }
+    
+      .experience-item h3{
+        font-size: 17px;
+      }
+    
+      .experience-item p {
+          font-size: 15px;
+          
+      }
 
     
 }
