@@ -160,9 +160,30 @@ body{
       font-weight: 900;
   }
 
-@media screen and (max-width: 800px){
-    /* needed tablet size */
-}
+  .experience-section {
+    
+    
+    
+  }
+
+  .experience-entry{
+
+  }
+
+  .experience-entry > h1{
+
+  }
+
+  .experience-item {
+
+  }
+
+  .experience-item h3{
+
+  }
+/* @media screen and (max-width: 800px){
+   
+} */
 
 @media screen and (max-width: 500px){
 
