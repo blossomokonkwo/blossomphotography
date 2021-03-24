@@ -161,6 +161,10 @@ body{
   }
 
 @media screen and (max-width: 800px){
+    /* needed tablet size */
+}
+
+@media screen and (max-width: 500px){
 
     body{
         margin-left: 0;
