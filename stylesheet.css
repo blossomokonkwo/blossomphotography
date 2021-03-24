@@ -15,8 +15,7 @@ body{
 
 .wrapper{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 
 .side-nav{
@@ -73,28 +72,27 @@ body{
 
 .current{
     font-weight: 900;
+    color: rgb(186, 189, 186);
 }
 
 .main-section{
     width: 85%;
     background-color: #FFFFFF;
     margin-left: 15%;
-    /* background-image: url('media/clean-textile.png'); */
 }
 
 .grid-container{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 100px;
     grid-row-gap: 100px;
     margin-left: 10%;
     margin-top: 100px;
-    margin-right: 100px;
     
 }
 
 .square-item{
-    /* background-color: ; */
+    
     height: 400px;
     width: 400px;
     display: flex;
@@ -106,6 +104,7 @@ body{
     height: inherit;
     width: inherit;
     object-fit: scale-down;
+    padding: 10px;
 }
 
 .topnav {
@@ -119,6 +118,7 @@ body{
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
+    margin-top: 50px;
   }
   
   /* Style navigation menu links */
@@ -137,6 +137,7 @@ body{
     position: absolute;
     right: 0;
     top: 0;
+    
   }
   
   /* Add a grey background color on mouse-over */
@@ -150,6 +151,13 @@ body{
     background-color: transparent;
     color: white;
     float: left;
+    display: block;
+
+  }
+
+  .active h3{
+      font-size: 4.5vw;
+      font-weight: 900;
   }
 
 @media screen and (max-width: 800px){
@@ -183,6 +191,11 @@ body{
         align-self: center;
         margin: 0;
         padding: 0;
+        width: 100%;
+        margin-left: 0;
+        
+            
+        
     }
 
     .grid-container{
@@ -195,7 +208,7 @@ body{
     }
     
     .square-item{
-        width: 90vw;
+        width: 100vw;
         justify-self: center;
         margin: 0px;
         object-fit: scale-down;
@@ -204,8 +217,6 @@ body{
 
     .square-item > img {
         width: inherit;
-       
-        
 
     }
     
