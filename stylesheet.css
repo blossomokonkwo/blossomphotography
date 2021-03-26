@@ -180,13 +180,13 @@ body{
   }
 
   .experience-entry > h1{
-    font-size: 30px;
+    font-size: 25px;
     
 
   }
 
   .experience-item {
-        margin-left: 100px;
+        margin-left: 50px;
         padding: 10px;
         margin-bottom: 10px;
 
@@ -194,11 +194,11 @@ body{
   }
 
   .experience-item h3{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .experience-item p {
-      font-size: 20px;
+      font-size: 15px;
       
   }
 
