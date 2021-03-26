@@ -205,6 +205,22 @@ body{
   .client-logos{
 
   }
+
+  footer {
+      height: 10px;
+      display: flex;
+      flex-direction: column;
+      
+  }
+
+  footer > p {
+      font-size: 10px;
+      align-self: center;
+      color: black;
+      margin-left: 15%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
 /* @media screen and (max-width: 800px){
    
 } */
@@ -296,6 +312,22 @@ body{
           font-size: 15px;
           
       }
+
+      footer {
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+  
+    footer > p {
+        font-size: 10px;
+        align-self: center;
+        color: black;
+        margin-left: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
     
 }
